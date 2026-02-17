@@ -1,0 +1,28 @@
+{
+  "name": "@aida/voice-pipeline",
+  "version": "1.0.0",
+  "description": "Voice-to-structured-output pipeline. Talk freely, get organized text, auto-paste anywhere.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "voice": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/cli.ts",
+    "start": "node dist/cli.js",
+    "cli": "tsx src/cli.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
+    "clipboardy": "^4.0.0",
+    "commander": "^12.0.0",
+    "dotenv": "^16.3.1",
+    "openai": "^4.80.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.9.3"
+  }
+}

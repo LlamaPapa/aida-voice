@@ -48,6 +48,15 @@ The app will ask for two permissions:
 
 Grant both in **System Settings → Privacy & Security**.
 
+### Start on Login
+
+To have AIDA Voice launch automatically when you log in:
+
+1. Open **System Settings → General → Login Items**
+2. Click **+** under "Open at Login"
+3. Select **AIDA Voice** from Applications
+4. It will start hidden in the menu bar — Option+Space ready to go
+
 ## API Keys
 
 AIDA Voice uses:

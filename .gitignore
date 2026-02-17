@@ -6,3 +6,6 @@ dist/
 *.webm
 .DS_Store
 native/AidaVoiceHelper
+native/aida-voice-server
+native/*.app
+native/*.dmg

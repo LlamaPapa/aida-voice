@@ -298,6 +298,12 @@ async function loadAppConfig() {
     document.querySelectorAll('.mode-btn').forEach(x => x.classList.toggle('active', x.textContent === mode));
     updateProviderBar();
     populateSettings();
+    // Auto-open settings on first run if no API keys configured
+    const hasOpenai = !!(appConfig.openaiApiKey || appConfig._envOpenai);
+    const hasAnthropic = !!(appConfig.anthropicApiKey || appConfig._envAnthropic);
+    if (!hasOpenai && !hasAnthropic) {
+      openSettings();
+    }
   } catch {}
 }
 
